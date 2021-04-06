@@ -37,26 +37,43 @@ for first_letter in dictionary.keys():
 m = int(input())
 last_printed = ''
 j = 0
+message = ''
 for i in range(m):
     word = input()
     first_letter = word[0]
 
-    if i != 0:
-        print()
-        # last_printed = 'n'
-    if j != 0 and last_printed != 'n':
-        print()
+    if i != 0 and last_printed != 'n':
+        # print("<- first worked here", end='')
+        # print()
         last_printed = 'n'
+
+
+
+    # if i == m-1 and last_printed != 'n':
+    #     print()
+    #     last_printed = 'n'
+    # if j != 0 and last_printed != 'n':
+    #     print()
+    #     last_printed = 'n'
     if first_letter in dictionary.keys():
         j = 0
+        if i != 0 and i != m - 1:
+            # message += 'N2'
+            message += '\n'
+        if i == m - 1:
+            # message += "N4"
+            message += '\n'
         printed = False
         for counts in dictionary[first_letter]['all_counts']:
             for word_from_dict in dictionary[first_letter][counts]:
                 if word in word_from_dict:
-                    if printed is True and last_printed != 'n':
-                        print()
+                    if printed is True:
+                        # print()
+                        # message += 'N'
+                        message += '\n'
                         last_printed = 'n'
-                    print(word_from_dict, end='')
+                    # print(word_from_dict, end='')
+                    message += word_from_dict
                     last_printed = ''
                     printed = True
                     j += 1
@@ -69,22 +86,22 @@ for i in range(m):
             if j >= 10:
                 # print()
                 break
+    if j != 0 and i != m-1:
+        # message += "N3"
+        message += '\n'
+    # if len(message) > 1:
+    #     if message[-1] != '\n':
+    #         message += '\n'
+    # else:
+    #     message += '\n'
+    if i != m - 1 and j != 0:
+        # print("<- third worked here", end='')
+        # print()
+        pass
 
-
-        # last_printed = ''
-        # for key in dictionary[first_letter].keys():
-        #     if key != 'all_counts'
-        #     dictionary[first_letter][key]
-
-        # qty = len(dictionary[first_letter])
-        # # if qty > 10:
-        # #     qty = 10
-        #
-        # for i in range(qty-1):
-        #     word_from_dict = dictionary[first_letter][qty - 1 - i]
-        #
-        #     if word in word_from_dict:
-        #         print(dictionary[first_letter][qty - 1 - i].split('_')[1])
-        #         j += 1
-        #     if j >= 10:
-        #         break
+    if i != m - 1 and last_printed != 'n' and j != 0:
+        # print(f"<- second worked here {i} and {m}", end='')
+        # print()
+        last_printed = 'n'
+    j = 0
+print(message, end='')
