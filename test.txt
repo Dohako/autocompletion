@@ -1,0 +1,107 @@
+5
+kare 10
+kanojo 20
+karetachi 1
+korosu 7
+sakura 3
+
+12
+kare 10
+kanojo 20
+kadoro 20
+karetachi 1
+korosu 7
+kawa 20
+kawarimi 31
+kama 1
+kamaitachi 90
+kilua 17
+kora 5
+sakura 3
+3
+k
+ka
+kar
+
+5
+kare 10
+kanojo 20
+karetachi 1
+korosu 7
+sakura 3
+3
+k
+ka
+kar
+
+5
+kare 10
+kanojo 20
+karetachi 1
+korosu 7
+sakura 3
+3
+g
+ga
+gar
+
+2
+b 1
+a 1
+2
+a
+b
+
+2
+acm 10000
+acmicpc 10000
+2
+ac
+ac
+
+2
+a 3
+b 2
+3
+x
+a
+z
+
+2
+a 10
+b 12
+4
+a
+b
+a
+b
+
+18
+a 10
+ba 0
+bb 1
+bc 1
+bd 1
+be 1
+bf 1
+bg 1
+bh 1
+bi 1
+bj 1
+bk 1
+bl 1
+bm 1
+bn 1
+bo 1
+bp 1
+bq 1
+1
+b
+
+3
+asd 1
+bfs 1
+dfs 1
+2
+d
+d
