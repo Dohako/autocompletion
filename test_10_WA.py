@@ -30,7 +30,9 @@ for i in range(m):
     if j != 0 and last_printed != 'n':
         print()
         last_printed = 'n'
+
     if first_letter in dictionary.keys():
+
         j = 0
         printed = False
         for counts in dictionary[first_letter]['all_counts']:
